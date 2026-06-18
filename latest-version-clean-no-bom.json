@@ -1,0 +1,10 @@
+{
+  "version": "9.40.40",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.40/EKlinics-Setup-9.40.40.exe",
+  "releaseNotes": [
+    "Restored safe online update checking.",
+    "Allowed Supabase sync and GitHub update manifest.",
+    "Prepared release installer build."
+  ],
+  "publishedAt": "2026-06-18T18:26:02.902Z"
+}
