@@ -1,10 +1,10 @@
 {
-"version": "9.40.44",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.44/EKlinics-Setup-9.40.44.exe",
+"version": "9.40.45",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.45/EKlinics-Setup-9.40.45.exe",
 "releaseNotes": [
-"Commercial users now see only the simple Check for updates screen.",
-"Moderator publishing tools are hidden from released/commercial builds.",
-"Update system remains connected to GitHub latest-version.json."
+"Commercial update flow is simpler.",
+"Users can download and install updates directly inside EKlinics.",
+"GitHub links, JSON links, and moderator tools remain hidden from commercial users."
 ],
-"publishedAt": "2026-06-18T18:26:02.902Z"
+"publishedAt": "2026-06-18T19:30:00.000Z"
 }
