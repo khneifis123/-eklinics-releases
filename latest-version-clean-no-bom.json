@@ -1,10 +1,10 @@
 {
-  "version": "9.40.40",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.40/EKlinics-Setup-9.40.40.exe",
-  "releaseNotes": [
-    "Restored safe online update checking.",
-    "Allowed Supabase sync and GitHub update manifest.",
-    "Prepared release installer build."
-  ],
-  "publishedAt": "2026-06-18T18:26:02.902Z"
+"version": "9.40.44",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.44/EKlinics-Setup-9.40.44.exe",
+"releaseNotes": [
+"Commercial users now see only the simple Check for updates screen.",
+"Moderator publishing tools are hidden from released/commercial builds.",
+"Update system remains connected to GitHub latest-version.json."
+],
+"publishedAt": "2026-06-18T18:26:02.902Z"
 }
