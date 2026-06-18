@@ -1,10 +1,10 @@
-{
-  "version": "9.40.28",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.28/EKlinics-Setup-9.27.15.exe",
-  "releaseNotes": [
-    "Improved update system.",
-    "Fixed reported bugs.",
-    "Improved backup and sync workflow."
-  ],
-  "publishedAt": "2026-06-18T00:00:00.000Z"
+﻿{
+    "version":  "9.40.40",
+    "downloadUrl":  "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.40/EKlinics-Setup-9.40.40.exe",
+    "releaseNotes":  [
+                         "Restored safe online update checking.",
+                         "Allowed Supabase sync and GitHub update manifest.",
+                         "Prepared release installer build."
+                     ],
+    "publishedAt":  "2026-06-18T18:26:02.902Z"
 }
