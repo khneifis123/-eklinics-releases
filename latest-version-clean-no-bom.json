@@ -1,13 +1,13 @@
 {
-"version": "9.70.5",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.70.5/EKlinics-Setup-9.70.5.exe",
-"updateMode": "silent-internal-installer",
-"userExperience": "background-download-then-silent-restart-update",
-"commercialRule": "Installer is internal and runs silently; user does not open GitHub, JSON, or choose files.",
-"releaseNotes": [
-"Silent commercial installer update added.",
-"EKlinics runs the internal installer silently after restart.",
-"Visible installer opens only as fallback if silent install fails."
-],
-"publishedAt": "2026-06-20T15:40:00.000Z"
+  "version": "9.81.2",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.81.2/Inventra-Setup-9.81.2.exe",
+  "updateMode": "silent-internal-installer",
+  "userExperience": "background-download-then-silent-restart-update",
+  "commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
+  "releaseNotes": [
+    "Inventra icon updated using the uploaded logo for app, installer, desktop shortcut, and favicon.",
+    "Settings page scroll behavior was stabilized by replacing the aggressive scroll lock with a calmer keeper.",
+    "No products, suppliers, orders, reports, updater logic, SQL, or app data are changed."
+  ],
+  "publishedAt": "2026-06-20T17:25:00.000Z"
 }
