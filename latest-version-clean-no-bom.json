@@ -1,13 +1,13 @@
 {
-"version": "9.70.3",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.70.3/EKlinics-Setup-9.70.3.exe",
+"version": "9.70.4",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.70.4/EKlinics-Setup-9.70.4.exe",
 "updateMode": "internal-installer",
 "userExperience": "background-download-then-restart-to-update",
 "commercialRule": "User does not open GitHub, JSON, or choose files.",
 "releaseNotes": [
-"Commercial seamless update UI added.",
-"EKlinics checks quietly and downloads the installer internally.",
-"Users see Update ready and restart to update."
+"Commercial updater test release.",
+"Use this version to test internal background download from v9.70.3.",
+"Confirms Update ready and Restart to update flow."
 ],
-"publishedAt": "2026-06-20T15:00:00.000Z"
+"publishedAt": "2026-06-20T15:20:00.000Z"
 }
