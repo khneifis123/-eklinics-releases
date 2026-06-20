@@ -1,13 +1,13 @@
 {
-"version": "9.70.2",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.70.2/EKlinics-Setup-9.70.2.exe",
+"version": "9.70.3",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.70.3/EKlinics-Setup-9.70.3.exe",
 "updateMode": "internal-installer",
 "userExperience": "background-download-then-restart-to-update",
-"commercialRule": "Commercial users update from inside EKlinics, not with patch ZIP files.",
+"commercialRule": "User does not open GitHub, JSON, or choose files.",
 "releaseNotes": [
-"Release publishing safety kit added.",
-"Publish package now contains the exact installer and JSON together.",
-"Checksum and upload checklist help prevent wrong-version installs on other laptops."
+"Commercial seamless update UI added.",
+"EKlinics checks quietly and downloads the installer internally.",
+"Users see Update ready and restart to update."
 ],
-"publishedAt": "2026-06-20T14:40:00.000Z"
+"publishedAt": "2026-06-20T15:00:00.000Z"
 }
