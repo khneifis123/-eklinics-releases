@@ -1,13 +1,13 @@
 {
-  "version": "9.81.2",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.81.2/Inventra-Setup-9.81.2.exe",
-  "updateMode": "silent-internal-installer",
-  "userExperience": "background-download-then-silent-restart-update",
-  "commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
-  "releaseNotes": [
-    "Inventra icon updated using the uploaded logo for app, installer, desktop shortcut, and favicon.",
-    "Settings page scroll behavior was stabilized by replacing the aggressive scroll lock with a calmer keeper.",
-    "No products, suppliers, orders, reports, updater logic, SQL, or app data are changed."
-  ],
-  "publishedAt": "2026-06-20T17:25:00.000Z"
+"version": "9.81.6B",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.81.6B/Inventra-Setup-9.81.6B.exe",
+"updateMode": "silent-internal-installer",
+"userExperience": "background-download-then-silent-restart-update",
+"commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
+"releaseNotes": [
+"Fixed icon authority lock using safe Node-based package.json editing.",
+"Future installers built from this project use the uploaded tooth-logo icon.",
+"No products, suppliers, orders, reports, updater logic, SQL, or app data are changed."
+],
+"publishedAt": "2026-06-20T18:20:00.000Z"
 }
