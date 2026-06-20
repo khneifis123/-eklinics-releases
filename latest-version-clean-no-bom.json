@@ -1,11 +1,11 @@
 {
-"version": "9.50.1",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.50.1/EKlinics-Setup-9.50.1.exe",
+"version": "9.50.3",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.50.3/EKlinics-Setup-9.50.3.exe",
 "releaseNotes": [
-"Changed version naming to 9.50.1.",
-"Established one-digit final version segment policy.",
-"Future sequence is 9.50.1 to 9.50.9, then 9.60.1."
+"Fixed Settings page crash caused by a missing update last-check helper.",
+"Restored settingsUpdatesLastCheckText and date formatting.",
+"Kept the internal auto-update installer flow active."
 ],
-"publishedAt": "2026-06-20T09:15:00.000Z"
+"publishedAt": "2026-06-20T09:45:00.000Z"
 }
 
