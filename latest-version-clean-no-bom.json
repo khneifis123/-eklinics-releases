@@ -1,10 +1,13 @@
 {
-"version": "9.60.8",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.60.8/EKlinics-Setup-9.60.8.exe",
+"version": "9.70.1",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.70.1/EKlinics-Setup-9.70.1.exe",
+"updateMode": "internal-installer",
+"userExperience": "background-download-then-restart-to-update",
+"commercialRule": "Commercial users update from inside EKlinics, not with patch ZIP files.",
 "releaseNotes": [
-"Added professional window state memory.",
-"EKlinics now restores the last window size and position.",
-"Maximized and minimized window states are remembered between launches."
+"Professional release pipeline added.",
+"Installer and update JSON are prepared together.",
+"Release verification prevents uploading old or mismatched installers."
 ],
-"publishedAt": "2026-06-20T13:30:00.000Z"
+"publishedAt": "2026-06-20T14:20:00.000Z"
 }
