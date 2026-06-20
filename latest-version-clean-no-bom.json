@@ -1,10 +1,10 @@
 {
-"version": "9.40.45",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.45/EKlinics-Setup-9.40.45.exe",
+"version": "9.40.46",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.46/EKlinics-Setup-9.40.46.exe",
 "releaseNotes": [
-"Commercial update flow is simpler.",
-"Users can download and install updates directly inside EKlinics.",
-"GitHub links, JSON links, and moderator tools remain hidden from commercial users."
+"Auto-update test release.",
+"Updates page now confirms automatic installer updates are enabled.",
+"This release proves the app code changed, not only the JSON text."
 ],
-"publishedAt": "2026-06-18T19:30:00.000Z"
+"publishedAt": "2026-06-18T20:00:00.000Z"
 }
