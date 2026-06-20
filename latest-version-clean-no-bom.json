@@ -1,13 +1,15 @@
 {
-"version": "9.81.6B",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.81.6B/Inventra-Setup-9.81.6B.exe",
+"version": "9.82.0B",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.82.0B/Inventra-Setup-9.82.0B.exe",
 "updateMode": "silent-internal-installer",
 "userExperience": "background-download-then-silent-restart-update",
 "commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
 "releaseNotes": [
-"Fixed icon authority lock using safe Node-based package.json editing.",
-"Future installers built from this project use the uploaded tooth-logo icon.",
-"No products, suppliers, orders, reports, updater logic, SQL, or app data are changed."
+"Fixed future installer dental icon lock verification newline bug.",
+"Locked the official dental logo as the installer icon source for all future Inventra installer builds.",
+"Added icon hash verification before building the installer so the wrong/default Electron icon is not reused.",
+"Future downloaded installers built from this release use the dental logo for the desktop shortcut, Start Menu, installer, app window, and favicon.",
+"No products, suppliers, orders, reports, updater data, SQL, or app data are changed."
 ],
-"publishedAt": "2026-06-20T18:20:00.000Z"
+"publishedAt": "2026-06-20T19:00:00.000Z"
 }
