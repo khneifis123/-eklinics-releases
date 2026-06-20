@@ -1,10 +1,11 @@
 {
-"version": "9.40.47",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.47/EKlinics-Setup-9.40.47.exe",
+"version": "9.40.8",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.40.8/EKlinics-Setup-9.40.8.exe",
 "releaseNotes": [
-"Update checks now use latest-version-clean-no-bom.json as the official manifest.",
-"GitHub raw update checks are cache-safe.",
-"Version numbers display more clearly on the Updates page."
+"Cleaned update version authority.",
+"The app now uses only APP_VERSION for current version and only latest-version-clean-no-bom.json for online latest version.",
+"Download and install appears only when the online latest version is higher than the current version."
 ],
-"publishedAt": "2026-06-20T06:00:00.000Z"
+"publishedAt": "2026-06-20T08:15:00.000Z"
 }
+::: 
