@@ -1,17 +1,17 @@
 {
-  "version": "10.2.2",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.2.2/Inventra-Setup-10.2.2.exe",
+  "version": "10.3.2",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.2/Inventra-Setup-10.3.2.exe",
   "updateMode": "assisted-installer",
-  "userExperience": "commercial-other-laptop-first-run-stabilized",
-  "commercialRule": "On a new laptop, cloud data is normalized after pull, clinic users are linked to the Supabase email, and Orders opens on all active purchase orders by default.",
+  "userExperience": "commercial-supabase-rpc-session-branding-repair",
+  "commercialRule": "Supabase push sync uses a single unambiguous RPC; stale refresh sessions are cleared; Settings branding guards no longer spam errors when state is temporarily unavailable.",
   "releaseNotes": [
-    "Fixed first-use false Low stock labels on other laptops by recalculating low stock from real quantity and reorder threshold after cloud pull.",
-    "Normalizes pulled product quantity/minimum/ideal values and removes stale copied low-status flags.",
-    "Fixes first-use Orders/Supplier Reorder Plan behavior by defaulting Active Purchase Orders to All open orders instead of a narrow Active tab.",
-    "Links the signed-in Supabase email to the default/owner clinic user after cloud pull when the cloud user exists but has no email locally.",
-    "Runs stabilization on cloud apply, account sync refresh, app focus, online, and first delayed startup checks.",
-    "No SQL is run automatically by this patch; Supabase SQL repair 10.2.0B must already be installed.",
+    "Fixes Supabase error: Could not choose the best candidate function between dsc93696_push_state bigint and integer overloads.",
+    "Routes app cloud pushes to dsc93696_push_state_v1032.",
+    "Includes required Supabase SQL that drops ambiguous overloaded RPC functions and recreates one clean RPC.",
+    "Clears stale Supabase refresh sessions after invalid refresh-token 400 errors.",
+    "Adds a safe guard for clinic branding settings when state/settings is temporarily unavailable.",
+    "The Electron CSP warning is a development-mode warning and does not show once packaged.",
     "No local app data, products, suppliers, orders, reports, inventory, or updater logic is deleted."
   ],
-  "publishedAt": "2026-06-21T15:30:00.000Z"
+  "publishedAt": "2026-06-21T17:20:00.000Z"
 }
