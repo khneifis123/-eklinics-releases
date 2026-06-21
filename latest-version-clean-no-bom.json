@@ -1,18 +1,17 @@
 {
-  "version": "10.3.3",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.3/Inventra-Setup-10.3.3.exe",
-  "updateMode": "assisted-installer",
-  "userExperience": "supabase-config-built-into-installed-app",
-  "commercialRule": "Every installed Inventra app already knows the Supabase project URL and public publishable key, so the user only signs in with email/password or Google and the same email pulls the same workspace.",
+  "version": "10.3.4",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.4/Inventra-Setup-10.3.4.exe",
+  "updateMode": "direct-fast-download-assisted-installer",
+  "userExperience": "silent-backups-and-fast-update-downloads",
+  "commercialRule": "Scheduled backups run silently without opening PowerShell/CMD windows, and update downloads use a direct GitHub asset download path to the user's Downloads folder.",
   "releaseNotes": [
-    "Fixed the previous 10.3.3 patch packaging error: ReferenceError ext is not defined.",
-    "Embeds the Supabase project URL and public publishable key into the app build.",
-    "Normalizes the Supabase URL to the base project URL, not the /rest/v1 endpoint.",
-    "Writes .env, .env.local, and .env.production so installer builds include the same Supabase config.",
-    "Sets Supabase config in localStorage automatically on startup, focus, and online events.",
-    "Fixes second-PC error: Supabase is not configured.",
+    "Replaces noisy scheduled backup window with a silent Windows scheduled task using a hidden VBS/PowerShell runner.",
+    "Disables older visible EKlinics/Inventra/DentalStock scheduled backup tasks that open a console window.",
+    "Adds a direct fast update downloader that downloads the installer to Downloads/Inventra Updates.",
+    "Supports GitHub redirect/CDN downloads with cache-busting and timeout protection.",
+    "Falls back to opening the direct installer URL in the browser if the internal downloader is unavailable.",
     "No SQL is run automatically by this patch.",
-    "No local app data, products, suppliers, orders, reports, inventory, or updater logic is deleted."
+    "No local app data, products, suppliers, orders, reports, inventory, sync logic, or account logic is deleted."
   ],
-  "publishedAt": "2026-06-21T18:55:00.000Z"
+  "publishedAt": "2026-06-21T19:10:00.000Z"
 }
