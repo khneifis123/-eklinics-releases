@@ -1,17 +1,18 @@
 {
-  "version": "10.3.2",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.2/Inventra-Setup-10.3.2.exe",
+  "version": "10.3.3",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.3/Inventra-Setup-10.3.3.exe",
   "updateMode": "assisted-installer",
-  "userExperience": "commercial-supabase-rpc-session-branding-repair",
-  "commercialRule": "Supabase push sync uses a single unambiguous RPC; stale refresh sessions are cleared; Settings branding guards no longer spam errors when state is temporarily unavailable.",
+  "userExperience": "supabase-config-built-into-installed-app",
+  "commercialRule": "Every installed Inventra app already knows the Supabase project URL and public publishable key, so the user only signs in with email/password or Google and the same email pulls the same workspace.",
   "releaseNotes": [
-    "Fixes Supabase error: Could not choose the best candidate function between dsc93696_push_state bigint and integer overloads.",
-    "Routes app cloud pushes to dsc93696_push_state_v1032.",
-    "Includes required Supabase SQL that drops ambiguous overloaded RPC functions and recreates one clean RPC.",
-    "Clears stale Supabase refresh sessions after invalid refresh-token 400 errors.",
-    "Adds a safe guard for clinic branding settings when state/settings is temporarily unavailable.",
-    "The Electron CSP warning is a development-mode warning and does not show once packaged.",
+    "Fixed the previous 10.3.3 patch packaging error: ReferenceError ext is not defined.",
+    "Embeds the Supabase project URL and public publishable key into the app build.",
+    "Normalizes the Supabase URL to the base project URL, not the /rest/v1 endpoint.",
+    "Writes .env, .env.local, and .env.production so installer builds include the same Supabase config.",
+    "Sets Supabase config in localStorage automatically on startup, focus, and online events.",
+    "Fixes second-PC error: Supabase is not configured.",
+    "No SQL is run automatically by this patch.",
     "No local app data, products, suppliers, orders, reports, inventory, or updater logic is deleted."
   ],
-  "publishedAt": "2026-06-21T17:20:00.000Z"
+  "publishedAt": "2026-06-21T18:55:00.000Z"
 }
