@@ -1,15 +1,15 @@
 {
-"version": "10.0.0",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.0.0/Inventra-Setup-10.0.0.exe",
-"updateMode": "silent-internal-installer",
-"userExperience": "background-download-then-silent-restart-update",
-"commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
-"releaseNotes": [
-"Renamed the release line to version 10.0.0.",
-"Locked the uploaded dental logo as the official Inventra icon authority.",
-"Updated source, public favicon, Electron runtime icon assets, build icon, and installer icon configuration.",
-"Updated Desktop and Start Menu shortcuts to point to the official dental icon.",
-"No SQL, app data, products, suppliers, orders, reports, inventory, or updater backend logic changed."
-],
-"publishedAt": "2026-06-21T09:55:00.000Z"
+  "version": "10.0.0",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.0.0/Inventra-Setup-10.0.0.exe",
+  "updateMode": "silent-internal-installer",
+  "userExperience": "background-download-then-silent-restart-update",
+  "commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
+  "releaseNotes": [
+    "Renamed the release line to version 10.0.0.",
+    "Locked the uploaded dental logo as the official Inventra icon authority.",
+    "Updated source, public favicon, Electron runtime icon assets, build icon, and installer icon configuration.",
+    "Updated Desktop and Start Menu shortcuts to point to the official dental icon.",
+    "No SQL, app data, products, suppliers, orders, reports, inventory, or updater backend logic changed."
+  ],
+  "publishedAt": "2026-06-21T09:55:00.000Z"
 }
