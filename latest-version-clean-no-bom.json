@@ -1,14 +1,15 @@
 {
-"version": "9.82.9",
-"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.82.9/Inventra-Setup-9.82.9.exe",
+"version": "9.83.0B",
+"downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v9.83.0B/Inventra-Setup-9.83.0B.exe",
 "updateMode": "silent-internal-installer",
 "userExperience": "background-download-then-silent-restart-update",
 "commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
 "releaseNotes": [
-"Safely changed Settings Data KPI cards to display 2 then 2 instead of 4 in one row.",
-"Removed failed 9.82.8 and 9.82.8B layout attempts if present.",
-"Added strict parent validation to avoid compressing the Settings page.",
+"Fixed the 9.83.0 icon patch artifactName bug.",
+"Locked the uploaded dental logo as the official Inventra icon authority.",
+"Updated source, public favicon, Electron runtime icon assets, build icon, and installer icon configuration.",
+"Updated Desktop and Start Menu shortcuts to point to the official dental icon.",
 "No SQL, app data, products, suppliers, orders, reports, inventory, or updater backend logic changed."
 ],
-"publishedAt": "2026-06-21T09:20:00.000Z"
+"publishedAt": "2026-06-21T09:45:00.000Z"
 }
