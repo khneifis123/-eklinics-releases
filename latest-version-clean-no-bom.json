@@ -1,16 +1,15 @@
 {
-  "version": "10.0.6",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.0.6/Inventra-Setup-10.0.6.exe",
-  "updateMode": "silent-internal-installer",
-  "userExperience": "assisted-installer-with-optional-desktop-shortcut-checkbox",
-  "commercialRule": "Inventra uses a stable installer identity; same-name Inventra versions upgrade in place and preserve app data.",
+  "version": "10.0.8",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.0.8/Inventra-Setup-10.0.8.exe",
+  "updateMode": "assisted-installer",
+  "userExperience": "installer-shows-desktop-shortcut-checkbox-option",
+  "commercialRule": "Inventra installers show the desktop shortcut option while preserving app data during upgrades.",
   "releaseNotes": [
-    "Installer changed to assisted NSIS mode so the desktop shortcut can be optional.",
-    "Desktop shortcut is user-controlled instead of forced always.",
-    "Start Menu shortcut remains enabled so the app can still be found.",
-    "Installer upgrade policy added: Inventra-to-Inventra should upgrade in place and preserve data.",
-    "Old EKlinics cleanup should be done only after Inventra opens correctly.",
+    "Locked the installer to assisted NSIS mode so the desktop shortcut checkbox/option is available.",
+    "Desktop shortcut is enabled as a real option, not forced with always.",
+    "Start Menu shortcut remains enabled so the app can always be found.",
+    "Uninstall/update behavior preserves app data.",
     "No SQL, app data, products, suppliers, orders, reports, inventory, or updater backend logic changed."
   ],
-  "publishedAt": "2026-06-21T12:05:00.000Z"
+  "publishedAt": "2026-06-21T12:55:00.000Z"
 }
