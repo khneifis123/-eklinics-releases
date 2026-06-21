@@ -1,16 +1,15 @@
 {
-  "version": "10.0.2",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.0.2/Inventra-Setup-10.0.2.exe",
+  "version": "10.0.3",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.0.3/Inventra-Setup-10.0.3.exe",
   "updateMode": "silent-internal-installer",
   "userExperience": "background-download-then-silent-restart-update",
   "commercialRule": "Inventra updates internally; users do not open GitHub, JSON, or choose files.",
   "releaseNotes": [
-    "Fixed the failed 10.0.1 permission patch by removing the bad icacls call.",
-    "Fixed the false MutationObserver verification failure from 10.0.1.",
-    "Resets the internal update download folder and verifies it is writable.",
-    "Clears stale update/download state when the app opens.",
-    "Hides stale update-not-prepared messages from older failed downloads.",
-    "No SQL, app data, products, suppliers, orders, reports, inventory, or updater backend logic changed."
+    "Fixed EPERM update download failures by moving updater downloads from Documents to the app userData folder.",
+    "Added a temp-folder fallback for update downloads.",
+    "Stopped reusing one static .exe.download file; each download now uses a unique temporary file.",
+    "Keeps installer launch and commercial seamless update behavior unchanged.",
+    "No SQL, app data, products, suppliers, orders, reports, inventory, or updater UI redesign changed."
   ],
-  "publishedAt": "2026-06-21T10:30:00.000Z"
+  "publishedAt": "2026-06-21T11:00:00.000Z"
 }
