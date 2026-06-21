@@ -1,15 +1,16 @@
 {
-  "version": "10.0.8",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.0.8/Inventra-Setup-10.0.8.exe",
+  "version": "10.1.0",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.1.0/Inventra-Setup-10.1.0.exe",
   "updateMode": "assisted-installer",
   "userExperience": "installer-shows-desktop-shortcut-checkbox-option",
-  "commercialRule": "Inventra installers show the desktop shortcut option while preserving app data during upgrades.",
+  "commercialRule": "Inventra automatically creates its updater download folders before preparing an update.",
   "releaseNotes": [
-    "Locked the installer to assisted NSIS mode so the desktop shortcut checkbox/option is available.",
-    "Desktop shortcut is enabled as a real option, not forced with always.",
-    "Start Menu shortcut remains enabled so the app can always be found.",
-    "Uninstall/update behavior preserves app data.",
-    "No SQL, app data, products, suppliers, orders, reports, inventory, or updater backend logic changed."
+    "Corrected the failed 10.0.10 patch JavaScript join bug.",
+    "Fixed ENOENT update preparation errors by auto-creating updater download folders before .download files are touched.",
+    "Creates DentalStockControl/ElectronProfile/DownloadedUpdates automatically when needed.",
+    "Adds safety guards for updater file write, stat, rename, copy, remove, and directory read operations.",
+    "Keeps the assisted installer with the desktop shortcut checkbox/option.",
+    "No SQL, app data, products, suppliers, orders, reports, inventory, or updater UI redesign changed."
   ],
-  "publishedAt": "2026-06-21T12:55:00.000Z"
+  "publishedAt": "2026-06-21T13:50:00.000Z"
 }
