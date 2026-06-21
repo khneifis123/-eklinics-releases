@@ -1,16 +1,19 @@
 {
-  "version": "10.1.0",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.1.0/Inventra-Setup-10.1.0.exe",
+  "version": "10.2.0",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.2.0/Inventra-Setup-10.2.0.exe",
   "updateMode": "assisted-installer",
-  "userExperience": "installer-shows-desktop-shortcut-checkbox-option",
-  "commercialRule": "Inventra automatically creates its updater download folders before preparing an update.",
+  "userExperience": "commercial-supabase-auth-and-workspace-sync",
+  "commercialRule": "Same Supabase email/password opens the same Inventra cloud workspace on any laptop; app data syncs automatically.",
   "releaseNotes": [
-    "Corrected the failed 10.0.10 patch JavaScript join bug.",
-    "Fixed ENOENT update preparation errors by auto-creating updater download folders before .download files are touched.",
-    "Creates DentalStockControl/ElectronProfile/DownloadedUpdates automatically when needed.",
-    "Adds safety guards for updater file write, stat, rename, copy, remove, and directory read operations.",
-    "Keeps the assisted installer with the desktop shortcut checkbox/option.",
-    "No SQL, app data, products, suppliers, orders, reports, inventory, or updater UI redesign changed."
+    "Added commercial Supabase Auth sign-in/session storage for same email/password on all laptops.",
+    "Added automatic workspace resolution for the signed-in Supabase user.",
+    "Added automatic startup, focus, online, polling, and save-triggered Supabase sync.",
+    "Uploads local data to cloud when cloud is empty and pulls cloud data when a new laptop is empty.",
+    "Protects against empty-cloud overwrites with local protection backups before applying cloud state.",
+    "Syncs products, suppliers, batches, movements, orders, stock counts, users, roles, settings, kits, and hashed app credentials.",
+    "Raw passwords and Supabase tokens are not uploaded into workspace state.",
+    "Includes Supabase SQL schema/RPC file for workspace state, backups, sync events, and security events.",
+    "No SQL is run automatically by the patch installer; run the SQL once in Supabase SQL Editor."
   ],
-  "publishedAt": "2026-06-21T13:50:00.000Z"
+  "publishedAt": "2026-06-21T14:30:00.000Z"
 }
