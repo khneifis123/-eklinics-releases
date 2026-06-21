@@ -1,17 +1,19 @@
 {
-  "version": "10.3.4",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.4/Inventra-Setup-10.3.4.exe",
+  "version": "10.3.5",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.5/Inventra-Setup-10.3.5.exe",
   "updateMode": "direct-fast-download-assisted-installer",
-  "userExperience": "silent-backups-and-fast-update-downloads",
-  "commercialRule": "Scheduled backups run silently without opening PowerShell/CMD windows, and update downloads use a direct GitHub asset download path to the user's Downloads folder.",
+  "userExperience": "same-email-cloud-master-live-sync",
+  "commercialRule": "For each signed-in email, Inventra seeds that email's cloud workspace from the first laptop with real data when the cloud is empty; other laptops pull that same workspace and all saves push/pull automatically every few seconds.",
   "releaseNotes": [
-    "Replaces noisy scheduled backup window with a silent Windows scheduled task using a hidden VBS/PowerShell runner.",
-    "Disables older visible EKlinics/Inventra/DentalStock scheduled backup tasks that open a console window.",
-    "Adds a direct fast update downloader that downloads the installer to Downloads/Inventra Updates.",
-    "Supports GitHub redirect/CDN downloads with cache-busting and timeout protection.",
-    "Falls back to opening the direct installer URL in the browser if the internal downloader is unavailable.",
-    "No SQL is run automatically by this patch.",
-    "No local app data, products, suppliers, orders, reports, inventory, sync logic, or account logic is deleted."
+    "Fixes same-email login showing no products/data on another laptop after the account works.",
+    "If the cloud workspace for that email is empty and this laptop has real data, the laptop safely seeds the cloud master for that email only.",
+    "If a new laptop signs in and cloud has data, it pulls the cloud workspace before local empty data can overwrite it.",
+    "Adds live sync polling every few seconds plus push-on-save for products, suppliers, orders, stock, users, settings, and app state.",
+    "Adds safety local backup before applying cloud state.",
+    "Uses the unambiguous dsc93696_push_state_v1032 RPC.",
+    "Includes required Supabase SQL for ensure_workspace, pull_state, and push_state_v1032.",
+    "No SQL is run automatically by the patch; run the copied SQL once in Supabase SQL Editor.",
+    "No local app data, products, suppliers, orders, reports, inventory, account logic, or updater logic is deleted."
   ],
-  "publishedAt": "2026-06-21T19:10:00.000Z"
+  "publishedAt": "2026-06-21T19:35:00.000Z"
 }
