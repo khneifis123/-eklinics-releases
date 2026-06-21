@@ -1,19 +1,17 @@
 {
-  "version": "10.2.0",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.2.0/Inventra-Setup-10.2.0.exe",
+  "version": "10.2.2",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.2.2/Inventra-Setup-10.2.2.exe",
   "updateMode": "assisted-installer",
-  "userExperience": "commercial-supabase-auth-and-workspace-sync",
-  "commercialRule": "Same Supabase email/password opens the same Inventra cloud workspace on any laptop; app data syncs automatically.",
+  "userExperience": "commercial-other-laptop-first-run-stabilized",
+  "commercialRule": "On a new laptop, cloud data is normalized after pull, clinic users are linked to the Supabase email, and Orders opens on all active purchase orders by default.",
   "releaseNotes": [
-    "Added commercial Supabase Auth sign-in/session storage for same email/password on all laptops.",
-    "Added automatic workspace resolution for the signed-in Supabase user.",
-    "Added automatic startup, focus, online, polling, and save-triggered Supabase sync.",
-    "Uploads local data to cloud when cloud is empty and pulls cloud data when a new laptop is empty.",
-    "Protects against empty-cloud overwrites with local protection backups before applying cloud state.",
-    "Syncs products, suppliers, batches, movements, orders, stock counts, users, roles, settings, kits, and hashed app credentials.",
-    "Raw passwords and Supabase tokens are not uploaded into workspace state.",
-    "Includes Supabase SQL schema/RPC file for workspace state, backups, sync events, and security events.",
-    "No SQL is run automatically by the patch installer; run the SQL once in Supabase SQL Editor."
+    "Fixed first-use false Low stock labels on other laptops by recalculating low stock from real quantity and reorder threshold after cloud pull.",
+    "Normalizes pulled product quantity/minimum/ideal values and removes stale copied low-status flags.",
+    "Fixes first-use Orders/Supplier Reorder Plan behavior by defaulting Active Purchase Orders to All open orders instead of a narrow Active tab.",
+    "Links the signed-in Supabase email to the default/owner clinic user after cloud pull when the cloud user exists but has no email locally.",
+    "Runs stabilization on cloud apply, account sync refresh, app focus, online, and first delayed startup checks.",
+    "No SQL is run automatically by this patch; Supabase SQL repair 10.2.0B must already be installed.",
+    "No local app data, products, suppliers, orders, reports, inventory, or updater logic is deleted."
   ],
-  "publishedAt": "2026-06-21T14:30:00.000Z"
+  "publishedAt": "2026-06-21T15:30:00.000Z"
 }
