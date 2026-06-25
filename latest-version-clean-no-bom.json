@@ -2,13 +2,12 @@
   "version": "10.4.0",
   "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.4.0/Inventra-Setup-10.4.0.exe",
   "releaseNotes": [
-    "Safe fixed 10.4.0 cloud workspace sync patch after the first 10.4.0 patch failed cleanly and restored backup.",
-    "Patches the real existing Inventra commercial Supabase sync layer instead of looking for a missing 10.3.x source block.",
-    "Keeps same Supabase email/account attached to the same cloud workspace on multiple laptops, so products, suppliers, orders, movements, logs, users, stock counts, kits, reports, settings, and app state stay shared for that account.",
-    "Adds a 10.4.0 sync stabilizer that starts sync after clinic unlock, login, startup, focus, online reconnect, and data saves.",
-    "Makes live sync faster by enabling incoming auto-apply and outgoing watch mode and reducing polling/debounce timing to near-real-time without redesigning pages.",
-    "Includes an optional non-destructive Supabase SQL repair file with workspace, state, event, cursor, backup, and security-log RPC functions. The patch does not run SQL automatically.",
+    "True final Inventra 10.4.0 builder/installer fix after Electron Builder still used the old nested NSIS artifactName 10.3.18.",
+    "Fixes the real remaining cause: package.json had a nested build.nsis.artifactName that overrides the top-level artifactName and was still producing Inventra-Setup-10.3.18.exe.",
+    "Updates all Electron Builder artifactName fields inside package.json build config to Inventra-Setup-${version}.${ext}, including build.nsis.artifactName.",
+    "Writes package.json, package-lock.json when present, and latest-version-clean-no-bom.json using UTF-8 without BOM.",
+    "Runs npm run build and npm run installer:win, then verifies the fresh builder output Inventra-Setup-10.4.0.exe exists in the configured InstallerBuilds folder.",
     "No app data, products, suppliers, orders, reports, inventory, users, Supabase data, updater, branding, or icon assets are deleted."
   ],
-  "publishedAt": "2026-06-25T14:31:00Z"
+  "publishedAt": "2026-06-25T15:12:00Z"
 }
