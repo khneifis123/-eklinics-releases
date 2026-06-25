@@ -1,12 +1,14 @@
 {
-  "version": "10.3.18",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.18/Inventra-Setup-10.3.18.exe",
+  "version": "10.4.0",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.4.0/Inventra-Setup-10.4.0.exe",
   "releaseNotes": [
-    "Safe follow-up to 10.3.17 from the restored 10.3.11 OAuth Protocol Callback + Recovery line.",
-    "Keeps Remember signed in behavior: a remembered account opens directly to the clinic user/passcode step on fresh app open, lock, or logout.",
-    "Fixes Back behavior: after pressing Back from clinic passcode, Inventra stays on email/password and will not auto-jump forward until the correct account password is confirmed again.",
-    "Keeps typed email/password fields stable when switching authentication views; no sudden clearing or view jumping.",
-    "No SQL, no data deletion, and no changes to products, suppliers, orders, reports, inventory, users, Supabase tables, updater branding, or icon assets."
+    "Safe fixed 10.4.0 cloud workspace sync patch after the first 10.4.0 patch failed cleanly and restored backup.",
+    "Patches the real existing Inventra commercial Supabase sync layer instead of looking for a missing 10.3.x source block.",
+    "Keeps same Supabase email/account attached to the same cloud workspace on multiple laptops, so products, suppliers, orders, movements, logs, users, stock counts, kits, reports, settings, and app state stay shared for that account.",
+    "Adds a 10.4.0 sync stabilizer that starts sync after clinic unlock, login, startup, focus, online reconnect, and data saves.",
+    "Makes live sync faster by enabling incoming auto-apply and outgoing watch mode and reducing polling/debounce timing to near-real-time without redesigning pages.",
+    "Includes an optional non-destructive Supabase SQL repair file with workspace, state, event, cursor, backup, and security-log RPC functions. The patch does not run SQL automatically.",
+    "No app data, products, suppliers, orders, reports, inventory, users, Supabase data, updater, branding, or icon assets are deleted."
   ],
-  "publishedAt": "2026-06-25T13:49:35Z"
+  "publishedAt": "2026-06-25T14:31:00Z"
 }
