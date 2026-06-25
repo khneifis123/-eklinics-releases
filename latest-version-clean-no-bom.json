@@ -1,19 +1,12 @@
 {
-  "version": "10.3.5",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.5/Inventra-Setup-10.3.5.exe",
-  "updateMode": "direct-fast-download-assisted-installer",
-  "userExperience": "same-email-cloud-master-live-sync",
-  "commercialRule": "For each signed-in email, Inventra seeds that email's cloud workspace from the first laptop with real data when the cloud is empty; other laptops pull that same workspace and all saves push/pull automatically every few seconds.",
+  "version": "10.3.18",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.3.18/Inventra-Setup-10.3.18.exe",
   "releaseNotes": [
-    "Fixes same-email login showing no products/data on another laptop after the account works.",
-    "If the cloud workspace for that email is empty and this laptop has real data, the laptop safely seeds the cloud master for that email only.",
-    "If a new laptop signs in and cloud has data, it pulls the cloud workspace before local empty data can overwrite it.",
-    "Adds live sync polling every few seconds plus push-on-save for products, suppliers, orders, stock, users, settings, and app state.",
-    "Adds safety local backup before applying cloud state.",
-    "Uses the unambiguous dsc93696_push_state_v1032 RPC.",
-    "Includes required Supabase SQL for ensure_workspace, pull_state, and push_state_v1032.",
-    "No SQL is run automatically by the patch; run the copied SQL once in Supabase SQL Editor.",
-    "No local app data, products, suppliers, orders, reports, inventory, account logic, or updater logic is deleted."
+    "Safe follow-up to 10.3.17 from the restored 10.3.11 OAuth Protocol Callback + Recovery line.",
+    "Keeps Remember signed in behavior: a remembered account opens directly to the clinic user/passcode step on fresh app open, lock, or logout.",
+    "Fixes Back behavior: after pressing Back from clinic passcode, Inventra stays on email/password and will not auto-jump forward until the correct account password is confirmed again.",
+    "Keeps typed email/password fields stable when switching authentication views; no sudden clearing or view jumping.",
+    "No SQL, no data deletion, and no changes to products, suppliers, orders, reports, inventory, users, Supabase tables, updater branding, or icon assets."
   ],
-  "publishedAt": "2026-06-21T19:35:00.000Z"
+  "publishedAt": "2026-06-25T13:49:35Z"
 }
