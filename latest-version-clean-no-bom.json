@@ -1,13 +1,21 @@
 {
-  "version": "10.4.0",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.4.0/Inventra-Setup-10.4.0.exe",
-  "releaseNotes": [
-    "True final Inventra 10.4.0 builder/installer fix after Electron Builder still used the old nested NSIS artifactName 10.3.18.",
-    "Fixes the real remaining cause: package.json had a nested build.nsis.artifactName that overrides the top-level artifactName and was still producing Inventra-Setup-10.3.18.exe.",
-    "Updates all Electron Builder artifactName fields inside package.json build config to Inventra-Setup-${version}.${ext}, including build.nsis.artifactName.",
-    "Writes package.json, package-lock.json when present, and latest-version-clean-no-bom.json using UTF-8 without BOM.",
-    "Runs npm run build and npm run installer:win, then verifies the fresh builder output Inventra-Setup-10.4.0.exe exists in the configured InstallerBuilds folder.",
-    "No app data, products, suppliers, orders, reports, inventory, users, Supabase data, updater, branding, or icon assets are deleted."
+  "version": "10.4.6",
+  "downloadUrl": "https://bqvirzwzzowodaubqpdc.supabase.co/storage/v1/object/public/inventra-updates/Inventra-Setup-10.4.6.exe",
+  "githubReleaseUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.4.6/Inventra-Setup-10.4.6.exe",
+  "fallbackDownloadUrls": [
+    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.4.6/Inventra-Setup-10.4.6.exe"
   ],
-  "publishedAt": "2026-06-25T15:12:00Z"
+  "latestJsonUrl": "https://bqvirzwzzowodaubqpdc.supabase.co/storage/v1/object/public/inventra-updates/latest-version-clean-no-bom.json",
+  "fileName": "Inventra-Setup-10.4.6.exe",
+  "releaseNotes": [
+    "Adds Phase U4 parallel byte-range installer preparation for faster update downloads when the update host supports HTTP ranges.",
+    "Checks installer metadata with HEAD and Range probes, then downloads the installer in 4 to 8 MB chunks with controlled parallel workers.",
+    "Retries failed chunks and falls back automatically to normal streaming download if range download is not supported or fails.",
+    "Verifies prepared installer size and optional SHA-256 when provided before marking the update ready.",
+    "Reuses an already prepared installer when valid, cleans stale partial/chunk files, and keeps the update cache small.",
+    "Applies the faster downloader to both Prepare update and Download + install flows while keeping Supabase Storage as the primary update host and GitHub Releases as fallback.",
+    "Updates real package/builder metadata to 10.4.6 and preserves the future-safe installer pattern Inventra-Setup-${version}.${ext}.",
+    "No app data, products, suppliers, orders, reports, inventory, users, Supabase data, backup data, updater branding, or icon assets are deleted."
+  ],
+  "publishedAt": "2026-06-30T18:35:00Z"
 }
