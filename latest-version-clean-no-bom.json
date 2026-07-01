@@ -1,33 +1,31 @@
 {
-  "version": "10.5.1",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.1/Inventra-Setup-10.5.1.exe",
-  "githubReleaseUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.1/Inventra-Setup-10.5.1.exe",
+  "version": "10.5.4",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/Inventra-Setup-10.5.4.exe",
+  "githubReleaseUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/Inventra-Setup-10.5.4.exe",
   "fallbackDownloadUrls": [
-    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.1/Inventra-Setup-10.5.1.exe"
+    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/Inventra-Setup-10.5.4.exe"
   ],
   "fallbackLatestJsonUrls": [
+    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/latest-version-clean-no-bom.json",
     "https://raw.githubusercontent.com/khneifis123/-eklinics-releases/main/latest-version-clean-no-bom.json"
   ],
-  "latestJsonUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.1/latest-version-clean-no-bom.json",
+  "latestJsonUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/latest-version-clean-no-bom.json",
   "updateHostStrategy": "github-primary-multi-host-ready",
   "futureHostExamples": [
     "https://updates.yourdomain.com/latest-version-clean-no-bom.json",
     "https://<cloudflare-r2-public-domain>/latest-version-clean-no-bom.json",
     "https://<bunny-storage-or-cdn-domain>/latest-version-clean-no-bom.json"
   ],
-  "fileName": "Inventra-Setup-10.5.1.exe",
+  "fileName": "Inventra-Setup-10.5.4.exe",
   "releaseNotes": [
-    "Fixes product edit dialogs closing when focusing or clicking text fields, number fields, date fields, selects, labels, or textareas inside the modal.",
-    "Adds a capture-phase modal form-field guard so backdrop/outside-click handlers cannot accidentally close a product edit window while the user is editing.",
-    "Keeps Orders > Supplier Reorder Plan out-of-stock reorder support from 10.5.0.",
-    "Keeps automatic release JSON generation with real installer size and SHA-256 after npm run installer:win.",
-    "Keeps GitHub Releases as the current update host and keeps the multi-host-ready updater shape for Cloudflare R2, Bunny, S3, or another CDN later.",
-    "Keeps U4 parallel byte-range downloader, streaming fallback, update cache, installer verification, and safe startup behavior.",
-    "Updates real package/builder metadata to 10.5.1 and preserves the future-safe installer pattern Inventra-Setup-${version}.${ext}.",
-    "No app data, products, suppliers, orders, reports, inventory, users, Supabase data, backup data, updater branding, or icon assets are deleted."
+    "Small safe updater test release to verify that Inventra can detect, prepare, restart, and install a newer version.",
+    "No functional app changes are included except version/update metadata refresh and safer automatic release JSON generation after installer build.",
+    "Keeps GitHub Releases as the update host for now while preserving future Cloudflare R2, Bunny, S3, Supabase Pro, or custom CDN support.",
+    "Keeps parallel byte-range download, streaming fallback, SHA-256 verification support, cached metadata, and the reliable restart-to-update guard.",
+    "No app data, products, suppliers, orders, reports, inventory, users, Supabase data, backup data, branding, or icon assets are deleted."
   ],
-  "publishedAt": "2026-07-01T04:11:45.290Z",
-  "fileSize": 83617870,
-  "sizeBytes": 83617870,
-  "sha256": "098228A1DF6DF965998E530CC8761911966D04C5BA28637608AE1DCA5923BD30"
+  "publishedAt": "2026-07-01T05:17:29.735Z",
+  "fileSize": 83619809,
+  "sizeBytes": 83619809,
+  "sha256": "B87E6DC80F9CBE4583BC3A9236FFFB3FD9E3C0F5E3069945E6E14496FEB37680"
 }
