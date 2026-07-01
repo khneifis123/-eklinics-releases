@@ -1,31 +1,31 @@
 {
-  "version": "10.5.4",
-  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/Inventra-Setup-10.5.4.exe",
-  "githubReleaseUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/Inventra-Setup-10.5.4.exe",
+  "version": "10.5.8",
+  "downloadUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.8/Inventra-Setup-10.5.8.exe",
+  "githubReleaseUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.8/Inventra-Setup-10.5.8.exe",
   "fallbackDownloadUrls": [
-    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/Inventra-Setup-10.5.4.exe"
+    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.8/Inventra-Setup-10.5.8.exe"
   ],
   "fallbackLatestJsonUrls": [
-    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/latest-version-clean-no-bom.json",
+    "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.8/latest-version-clean-no-bom.json",
     "https://raw.githubusercontent.com/khneifis123/-eklinics-releases/main/latest-version-clean-no-bom.json"
   ],
-  "latestJsonUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.4/latest-version-clean-no-bom.json",
+  "latestJsonUrl": "https://github.com/khneifis123/-eklinics-releases/releases/download/v10.5.8/latest-version-clean-no-bom.json",
   "updateHostStrategy": "github-primary-multi-host-ready",
   "futureHostExamples": [
     "https://updates.yourdomain.com/latest-version-clean-no-bom.json",
     "https://<cloudflare-r2-public-domain>/latest-version-clean-no-bom.json",
     "https://<bunny-storage-or-cdn-domain>/latest-version-clean-no-bom.json"
   ],
-  "fileName": "Inventra-Setup-10.5.4.exe",
+  "fileName": "Inventra-Setup-10.5.8.exe",
   "releaseNotes": [
-    "Small safe updater test release to verify that Inventra can detect, prepare, restart, and install a newer version.",
-    "No functional app changes are included except version/update metadata refresh and safer automatic release JSON generation after installer build.",
-    "Keeps GitHub Releases as the update host for now while preserving future Cloudflare R2, Bunny, S3, Supabase Pro, or custom CDN support.",
-    "Keeps parallel byte-range download, streaming fallback, SHA-256 verification support, cached metadata, and the reliable restart-to-update guard.",
-    "No app data, products, suppliers, orders, reports, inventory, users, Supabase data, backup data, branding, or icon assets are deleted."
+    "Small safe test release for the hidden silent restart-to-update installer flow.",
+    "No feature, product, supplier, order, report, data, UI, branding, or cloud-sync changes are included.",
+    "Only app version/update metadata is refreshed so an older installed Inventra can detect, prepare, silently install, and reopen this newer version.",
+    "Keeps GitHub Releases as the active update host for now while keeping Cloudflare R2, Bunny, S3, Supabase Pro, or a custom CDN possible later.",
+    "Keeps parallel byte-range download, streaming fallback, SHA-256 verification support, cached metadata, auto SHA release JSON generation, and hidden silent update install behavior."
   ],
-  "publishedAt": "2026-07-01T05:17:29.735Z",
-  "fileSize": 83619809,
-  "sizeBytes": 83619809,
-  "sha256": "B87E6DC80F9CBE4583BC3A9236FFFB3FD9E3C0F5E3069945E6E14496FEB37680"
+  "publishedAt": "2026-07-01T07:05:59.852Z",
+  "fileSize": 83623675,
+  "sizeBytes": 83623675,
+  "sha256": "16BB0A78B2FA2CD96C0E505C5FF237D9A4E29629701AEC23E11AA1B36B68322A"
 }
